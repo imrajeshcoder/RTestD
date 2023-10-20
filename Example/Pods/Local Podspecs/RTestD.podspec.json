@@ -1,0 +1,22 @@
+{
+  "name": "RTestD",
+  "version": "0.1.0",
+  "summary": "A short description of RTestD.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/imrajeshcoder/RTestD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "imrajeshcoder": "rajesh.s@vrinsoft.com"
+  },
+  "source": {
+    "git": "https://github.com/imrajeshcoder/RTestD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "RTestD/Classes/**/*"
+}

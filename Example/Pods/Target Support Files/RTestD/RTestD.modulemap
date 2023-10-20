@@ -1,0 +1,6 @@
+framework module RTestD {
+  umbrella header "RTestD-umbrella.h"
+
+  export *
+  module * { export * }
+}

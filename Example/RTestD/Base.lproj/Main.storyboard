@@ -1,30 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t7d-2y-Mkk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="SKX-Fc-VdG">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="RTestD_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t7d-2y-Mkk" customClass="ViewController" customModule="RTestD_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="eIn-Po-ohs"/>
+                        <viewControllerLayoutGuide type="bottom" id="lM7-OF-HvW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="fYS-tq-bbU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJQ-bT-LaP">
+                                <rect key="frame" x="109" y="316" width="157" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Date Picker"/>
+                                <connections>
+                                    <action selector="btnAction_DatePickerClick:" destination="t7d-2y-Mkk" eventType="touchUpInside" id="Uom-M8-3Cv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-Mm-dzk">
+                                <rect key="frame" x="16" y="266" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7gC-hM-Ep2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GbR-Mm-dzk" secondAttribute="trailing" constant="16" id="0do-Xo-PvC"/>
+                            <constraint firstItem="hJQ-bT-LaP" firstAttribute="centerX" secondItem="fYS-tq-bbU" secondAttribute="centerX" id="9PY-D6-GvW"/>
+                            <constraint firstItem="GbR-Mm-dzk" firstAttribute="leading" secondItem="fYS-tq-bbU" secondAttribute="leading" constant="16" id="OOa-EP-XYG"/>
+                            <constraint firstItem="hJQ-bT-LaP" firstAttribute="top" secondItem="GbR-Mm-dzk" secondAttribute="bottom" constant="16" id="dcU-y8-pPS"/>
+                            <constraint firstItem="hJQ-bT-LaP" firstAttribute="centerY" secondItem="fYS-tq-bbU" secondAttribute="centerY" id="yNM-z0-joF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtDatePicker" destination="GbR-Mm-dzk" id="VZF-3X-zJf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAo-zK-Swq" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86" y="-32"/>
         </scene>
     </scenes>
 </document>
